@@ -1,0 +1,123 @@
+/* shared styles */
+*{
+    font-family: "Work Sans", sans-serif;
+    color: rgb(19, 19, 19);
+}
+.btn-primary{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
+}
+/* header styles */
+header{
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
+}
+.nav-title{
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav> ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-left: 30px;
+    color: rgb(66, 66, 66);
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav li a{
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+
+/* banner styles */
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    color: rgb(19, 19, 19);
+    font-weight: 700;
+}
+.banner-description{
+    color: rgb(114, 114, 114);
+}
+
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* teams style */
+.team-container{
+    display: flex;
+    align-items: center;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size:2.8rem;
+}
+.quick-list{
+    color:rgb(114, 114, 114);
+    font-weight: 500;
+}
+.ofour{
+    color:rgb(19, 19, 19);
+    font-weight: 700;
+}
+.text-features{
+    color:rgb(255, 144, 14);
+    font-weight: 700;
+}
+
+/* Responsive media query */
+/* mobile device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
