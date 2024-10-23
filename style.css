@@ -14,16 +14,20 @@
     border: none;
     cursor: pointer;
 }
+.text-ligth-gray{
+    color: rgb(114, 114, 114);
+}
+.section-title{
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 /* header styles */
 header{
     background: rgba(255, 144, 14, 0.1);
     padding: 50px 240px;
 }
-.nav-title{
-    color: rgb(19, 19, 19);
-    font-size: 2.8rem;
-    font-weight: 700;
-}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -56,9 +60,6 @@ nav li a{
     color: rgb(19, 19, 19);
     font-weight: 700;
 }
-.banner-description{
-    color: rgb(114, 114, 114);
-}
 
 .banner img{
     margin-top: 20px;
@@ -68,7 +69,7 @@ nav li a{
 /* main styles */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* teams style */
@@ -100,6 +101,97 @@ main{
     color:rgb(255, 144, 14);
     font-weight: 700;
 }
+/* features styles */
+.features{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.features .section-title{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+}
+.feature-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+}
+.feature-image img{
+    height: 90%;
+    margin-left: 90px;
+}
+.ten-years-badge{
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(255, 144, 14);
+    width:342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    color: white;
+    margin: 0;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+    color: white;
+}
+/* fact-section */
+.factscard-container{
+    display: flex;
+    justify-content: space-around;
+}
+.factscard-container .card{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.factscard-container .cards-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.factscard-container .cards-stat{
+    font-size: 2.8rem;
+    color: rgb(66, 66, 66);
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* sponsors section */
+.sponsors{
+    text-align: center;
+}
+.sponsors-image-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.sponsors-image-container img{
+    width: 165px;
+}
+
+/* footer section */
+footer div{
+    background: rgba(255, 144, 14, 0.1);
+    text-align: center;
+    margin: 100px 300px;
+}
+footer p{
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 /* Responsive media query */
 /* mobile device */
@@ -107,8 +199,34 @@ main{
     header{
         padding: 20px;
     }
-    nav{
+    nav, .team-container, .factscard-container, .sponsors-image-container, .features{
         flex-direction: column;
+    }
+    .feature-image img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        position: static;
+    }
+    .team-image-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .factscard-container{
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer div{
+        margin: 0;
+    }
+    footer p{
+        padding: 20px 40px;
+        font-size: 10px;
     }
 }
 
@@ -117,7 +235,14 @@ main{
     header{
         padding: 50px;
     }
-    nav{
+    nav, .features, .team-container, .sponsors-image-container{
         flex-direction: column;
+    }
+    footer div{
+        margin: 0;
+    }
+    footer p{
+        padding: 20px 40px;
+        font-size: 10px;
     }
 }
